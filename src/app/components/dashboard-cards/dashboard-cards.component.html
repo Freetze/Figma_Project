@@ -1,0 +1,16 @@
+<div class="card-container">
+  <div (click)="onImageClick()" class="img-container">
+    <img [src]="item.imgPath" alt="" />
+  </div>
+  <div class="details-container">
+    <h2>
+      {{ item.title }}
+    </h2>
+    <h3>{{ item.date }}</h3>
+    <app-primary-button
+      (onClick)="onBookClick()"
+      [label]="'BOOK'"
+      [width]="'fit-content'"
+    ></app-primary-button>
+  </div>
+</div>

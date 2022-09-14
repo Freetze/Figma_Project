@@ -1,0 +1,30 @@
+<div class="form-container">
+  <h2>Login</h2>
+  <form [formGroup]="login" (ngSubmit)="onSubmit()">
+    <div
+      app-form-input
+      [name]="'username'"
+      [control]="username"
+      [label]="'username'"
+    ></div>
+    <div
+      [name]="'password'"
+      [control]="password"
+      [label]="'password'"
+      [type]="'password'"
+      [svgIcon]=""
+      app-form-input
+    ></div>
+    <app-primary-button
+      [label]="'Login'"
+      [padding]="'8px 16px'"
+      [disabled]="!login.valid"
+      [type]="'submit'"
+    ></app-primary-button>
+  </form>
+
+  <div class="link-container">
+    <span class="link">Not registered yet?</span>
+    <a href="/">Register</a>
+  </div>
+</div>

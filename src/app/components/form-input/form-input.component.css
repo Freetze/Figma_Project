@@ -1,0 +1,111 @@
+.container{
+  width: 100%;
+  height: fit-content;
+
+}
+label{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+
+}
+.inputcontainer{
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+.inputcontainer * {
+  transition: all 0.05s ease-in;
+}
+input{
+  padding: 16px 48px 16px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  background-color: transparent;
+  color: black;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+
+}
+input:hover{
+  border: 1px solid #555555;
+
+}
+input:focus {
+  border: 1px solid #2F80ED;
+
+}
+
+
+.label-container{
+  top: 0;
+  left: 16px;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #424242;
+  z-index: 1;
+  background-color: white;
+
+}
+input:focus + .label-container{
+  padding: 0 5px;
+  top: -25%;
+  left: 12px;
+  color: #2F80ED;
+  height: auto;
+  z-index: 2;
+}
+
+.inputHasValue {
+  padding: 0 5px;
+  top: -25%;
+  left: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  height: auto;
+  z-index: 2;
+}
+
+.icon-container{
+  top: 0;
+  right: 0;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+}
+.error-container{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+
+  color: #A12027;
+
+}
+.error-container p {
+  padding: 5px ;
+}
+.is-invalid-input{
+  border: 1px solid #A12027;
+}
+.is-invalid-label{
+  color: #A12027;
+}

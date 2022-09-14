@@ -1,0 +1,40 @@
+.card-container{
+  width: 100%;
+
+}
+.img-container{
+  width: 100%;
+  height: 113px;
+
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+h3{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  color: rgba(0, 0, 0, 0.6);
+
+}
+.details-container{
+  padding: 8px;
+}
+.details-container * {
+  margin: 4px 0;
+}

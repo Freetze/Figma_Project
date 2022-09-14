@@ -1,0 +1,15 @@
+<div class="gallery-container">
+  <div class="image-container">
+    <img [src]="images[selectedIndex]" />
+  </div>
+  <div class="controller-container">
+    <div
+      (click)="setIndex(i)"
+      class="controller-button"
+      [class.selected]="selectedIndex == i"
+      *ngFor="let image of images; let i = index"
+    >
+      <div class="controller-button-content"></div>
+    </div>
+  </div>
+</div>

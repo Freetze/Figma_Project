@@ -1,0 +1,35 @@
+<div [ngStyle]="{ width: width, height: height }" class="container">
+  <div class="inputcontainer">
+    <input
+      [class.is-invalid-input]="control.invalid && control.touched"
+      [name]="name"
+      [type]="type"
+      [formControl]="control"
+      type="text"
+    />
+
+    <div
+      [class.is-invalid-label]="control.invalid && control.touched"
+      [ngClass]="{ inputHasValue: control && control.value.length > 0 }"
+      class="label-container"
+    >
+      <label>{{ label }}</label>
+    </div>
+    <div class="icon-container">
+      <img
+        class="icon"
+        [src]="
+          control.invalid && control.touched
+            ? '../../assets/error.svg'
+            : svgIcon
+        "
+      />
+    </div>
+  </div>
+  <div *ngIf="control && control.touched" class="error-container">
+    <p *ngIf="control.hasError('required')">Field is mandatory</p>
+    <p *ngIf="control.hasError('pattern')">
+      Filled incorrectly
+    </p>
+  </div>
+</div>

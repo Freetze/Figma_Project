@@ -1,0 +1,14 @@
+main{
+  padding: 15px;
+  min-height: 100vh;
+}
+.items-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 50px 0;
+}
+.items-container *{
+  width: 48%;
+  margin: 8px 0;
+}

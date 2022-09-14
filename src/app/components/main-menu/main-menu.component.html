@@ -1,0 +1,10 @@
+<div class="menu-container">
+  <div
+    *ngFor="let menuItem of menuItems; let i = index"
+    class="menu-item"
+    [class.selected]="i == selectedIndex"
+  >
+    <img [src]="menuItem.iconPath" />
+    <p>{{ menuItem.title }}</p>
+  </div>
+</div>

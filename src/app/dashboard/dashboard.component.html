@@ -1,0 +1,14 @@
+<main>
+  <app-header [title]="title"></app-header>
+  <app-dashboard-gallery [images]="images"></app-dashboard-gallery>
+  <div class="items-container">
+    <div
+      (bookClick)="handleSuccessfullModal()"
+      (imageClick)="handleImageClick($event)"
+      app-dashboard-card
+      *ngFor="let item of items"
+      [item]="item"
+      [width]="'45%'"
+    ></div>
+  </div>
+</main>
